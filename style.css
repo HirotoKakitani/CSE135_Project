@@ -1,0 +1,59 @@
+html{
+    min-height: 100%;
+    height:100%;
+}
+
+body{
+    height:100%;
+    width:100%;
+}
+
+.hiro_flexContainer{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+}
+.hiro_header {
+    width: 100%;
+    background-color: #cc99ff;
+    -background-color: #b3cccc;
+    text-align: center;
+    border-style: ridge;
+}
+.hiro_content_cont{
+    flex:1;
+    display:flex;
+}
+.hiro_navbar{
+    flex-basis: 240px;
+    background-color: #e6ccff;
+    -background-color: #e0ebeb;
+    text-align: center;
+    border-style: ridge;
+}
+.hiro_nav_list{
+    text-align:left;
+}
+.hiro_content{
+    flex:1;   
+    display: flex;
+    background-color: #f3e6ff;
+}
+.hiro_big_content{
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+}
+.hiro_footer{
+    background-color: gray;
+    text-align: center;
+    flex-basis:content;
+    width: 100%;
+}
+.hiro_welcome_text{
+    font-size:3em; 
+}
+
+
