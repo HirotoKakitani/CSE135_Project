@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+
+            //change method based on input value
+            window.onload = function (){
+                var formDOM = document.getElementById("echoForm");
+                var buttonDOM = document.getElementById("submit");
+                var methodDOM = document.getElementById("method");
+                formDOM.addEventListener("submit",function(){
+                    formDOM.method=methodDOM.value;
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <!--<form action="/echo" id="echoForm">-->
+        <form action="http://0.0.0.0:8085/echo.php" id="echoForm">
+            <label>First Name: <input type="text" name="first"></label>
+            <label>Last Name: <input type="text" name="last"></label>
+            <label>Favorite Color: 
+                <select name="color">
+                    <option value = "red">Red</option>
+                    <option value = "orange">Orange</option>
+                    <option value = "yellow">Yellow</option>
+                    <option value = "green">Green</option>
+                    <option value = "blue">Blue</option>
+                    <option value = "purple">Purple</option>
+                </select>
+            </label>
+            <label> Method:
+                <select name = "method" id = "method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                </select>
+            </label>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>
